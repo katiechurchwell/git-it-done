@@ -1,6 +1,11 @@
 var repoNameEl = document.querySelector("#repo-name");
 var issueContainerEl = document.querySelector("#issues-container");
 var limitWarningEl = document.querySelector("#limit-warning");
+var queryString = document.location.search;
+
+var getRepoName = function() {
+
+}
 
 var getRepoIssues = function(repo) {
   // format the github api url
@@ -82,3 +87,4 @@ var displayWarning = function(repo) {
 };
 
 getRepoIssues("facebook/react");
+getRepoName()
