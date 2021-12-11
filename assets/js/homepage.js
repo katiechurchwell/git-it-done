@@ -112,7 +112,7 @@ var getFeaturedRepos = function (language) {
   });
 };
 
-var buttonClickHandler = function(event) {
+var buttonClickHandler = function (event) {
   event.preventDefault();
   var language = event.target.getAttribute("data-language");
   console.log(language);
@@ -122,7 +122,7 @@ var buttonClickHandler = function(event) {
     //clear old content
     repoContainerEl.textContent = "";
   }
-}
+};
 
 // add event listeners to forms
 userFormEl.addEventListener("submit", formSubmitHandler);
